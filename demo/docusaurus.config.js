@@ -59,6 +59,27 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'android',
+        path: 'docs-versioned/android',
+
+        routeBasePath: 'android',
+        // sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'ios',
+        path: 'docs-versioned/ios',
+        routeBasePath: 'ios',
+        // sidebarPath: require.resolve("./sidebars.js"),
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
