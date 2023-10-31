@@ -67,7 +67,14 @@ const config = {
         path: 'docs-versioned/android',
 
         routeBasePath: 'android',
-        // sidebarPath: require.resolve("./sidebars.js"),
+        sidebarPath: require.resolve("./docs-versioned/android/sidebars.js"),
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: 'latest', 
+            banner: 'none',
+          }
+        },
       },
     ],
     [
@@ -77,6 +84,13 @@ const config = {
         path: 'docs-versioned/ios',
         routeBasePath: 'ios',
         // sidebarPath: require.resolve("./sidebars.js"),
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: 'latest', 
+            banner: 'none',
+          }
+        },
       },
     ],
   ],
