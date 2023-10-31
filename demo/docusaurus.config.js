@@ -115,10 +115,21 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'docsVersionDropdown',
+            docsPluginId: 'ios',
+            position: 'right',
+          },
+          {
+            type: 'docsVersionDropdown',
+            docsPluginId: 'android',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
+
         ],
       },
       footer: {
